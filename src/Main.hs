@@ -72,7 +72,7 @@ handleGuess puzzle guess = do
       putStrLn "You already guessed that character, pick something else!"
       return puzzle 
     (True, _) -> do 
-      putStrLn "This Character was in the wor, filling in the word accordingly"
+      putStrLn "This Character was in the word, filling in the word accordingly"
       return (fillInCharacter puzzle guess)
     (False, _) -> do 
       putStrLn "This Character wasn't in the word, try again"

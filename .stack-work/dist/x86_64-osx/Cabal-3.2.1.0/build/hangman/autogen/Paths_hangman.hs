@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/Users/bradleyheather/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/bin"
-libdir     = "/Users/bradleyheather/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/lib/x86_64-osx-ghc-8.10.4/hangman-0.1.0.0-DiPJtrsZBolKjRSa8linHi-hangman"
-dynlibdir  = "/Users/bradleyheather/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/lib/x86_64-osx-ghc-8.10.4"
-datadir    = "/Users/bradleyheather/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/share/x86_64-osx-ghc-8.10.4/hangman-0.1.0.0"
-libexecdir = "/Users/bradleyheather/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/libexec/x86_64-osx-ghc-8.10.4/hangman-0.1.0.0"
-sysconfdir = "/Users/bradleyheather/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/etc"
+bindir     = "/Users/bradleyheather/Code/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/bin"
+libdir     = "/Users/bradleyheather/Code/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/lib/x86_64-osx-ghc-8.10.4/hangman-0.1.0.0-DiPJtrsZBolKjRSa8linHi-hangman"
+dynlibdir  = "/Users/bradleyheather/Code/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/lib/x86_64-osx-ghc-8.10.4"
+datadir    = "/Users/bradleyheather/Code/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/share/x86_64-osx-ghc-8.10.4/hangman-0.1.0.0"
+libexecdir = "/Users/bradleyheather/Code/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/libexec/x86_64-osx-ghc-8.10.4/hangman-0.1.0.0"
+sysconfdir = "/Users/bradleyheather/Code/Projects/hangman/.stack-work/install/x86_64-osx/22b31c3ed0a8aa7ac259c21da618461719eb2ddb0707c16c7980d41a561f70cf/8.10.4/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "hangman_bindir") (\_ -> return bindir)
