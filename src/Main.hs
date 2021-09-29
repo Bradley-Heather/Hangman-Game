@@ -8,6 +8,7 @@ import System.Exit   (exitSuccess)
 import System.IO     (BufferMode(NoBuffering), hSetBuffering, stdout)
 import System.Random (randomRIO)
 
+-- | Generate a list of words with a min and max length from an external dictionary
 newtype WordList = WordList [String]
       deriving (Eq, Show)
 
@@ -30,6 +31,7 @@ gameWords = do
          let l = length (w :: String)
          in l >= minWordLength && l < maxWordLength
 
+-- | Choose a random word from the list generated
 randomWord :: WordList -> IO String
 randomWord (WordList wl) = do 
   randomIndex <- randomRIO (0, length wl  - 1)
@@ -38,6 +40,7 @@ randomWord (WordList wl) = do
 randomWord' :: IO String
 randomWord' = gameWords >>= randomWord
 
+-- | Define the game
 data Puzzle = Puzzle String [Maybe Char] [Char] -- The word we trying to guess, the characters we've filled in and the letters we've guessed 
 
 instance Show Puzzle where 
